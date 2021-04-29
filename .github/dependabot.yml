@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: boto3
+    versions:
+    - 1.16.47
+    - 1.16.63
+  - dependency-name: botocore
+    versions:
+    - 1.19.47
+    - 1.19.63
